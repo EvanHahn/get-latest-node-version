@@ -1,7 +1,7 @@
 {
   "name": "get-latest-node-version",
   "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "get the latest version of Node",
   "homepage": "https://github.com/EvanHahn/get-latest-node-version",
   "main": "get-latest-node-version.js",
