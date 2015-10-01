@@ -1,0 +1,26 @@
+{
+  "name": "get-latest-node-version",
+  "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
+  "version": "0.0.0",
+  "description": "get the latest version of Node",
+  "homepage": "https://github.com/EvanHahn/get-latest-node-version",
+  "main": "get-latest-node-version.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "node",
+    "version",
+    "latest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EvanHahn/get-latest-node-version.git"
+  },
+  "bugs": "https://github.com/EvanHahn/get-latest-node-version/issues",
+  "license": "Unlicense",
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "semver": "^5.0.3"
+  }
+}
