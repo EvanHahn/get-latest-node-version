@@ -7,6 +7,7 @@
   "main": "get-latest-node-version.js",
   "scripts": {
     "format": "prettier --write .",
+    "test:eslint": "eslint .",
     "test:prettier": "prettier --check .",
     "test:node": "node --test",
     "test": "run-p --aggregate-output test:*"
@@ -23,6 +24,9 @@
   "bugs": "https://github.com/EvanHahn/get-latest-node-version/issues",
   "license": "Unlicense",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0",
     "npm-run-all2": "^9.0.1",
     "prettier": "^3.8.3",
     "semver": "^5.0.3"
