@@ -3,11 +3,11 @@
 Usage:
 
 ```js
-var getLatestNodeVersion = require("get-latest-node-version");
-var semver = require("semver");
+import getLatestNodeVersion from "get-latest-node-version";
+import semver from "semver";
 
 const latestVersion = await getLatestNodeVersion();
-var currentVersion = process.versions.node;
+const currentVersion = process.versions.node;
 if (semver.lt(currentVersion, latestVersion)) {
   console.log("You are running an old version of Node!");
 } else {
