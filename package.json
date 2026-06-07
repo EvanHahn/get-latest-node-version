@@ -5,6 +5,9 @@
   "description": "get the latest version of Node",
   "homepage": "https://github.com/EvanHahn/get-latest-node-version",
   "main": "get-latest-node-version.js",
+  "engines": {
+    "node": ">=21.0.0"
+  },
   "scripts": {
     "format": "prettier --write .",
     "test:eslint": "eslint .",

@@ -1,29 +1,12 @@
-var https = require("https");
+module.exports = async function getLatestNodeVersion() {
+  const res = await fetch("https://nodejs.org/dist/latest/SHASUMS256.txt");
 
-function getLatestNodeVersion() {
-  return new Promise(function (resolve, reject) {
-    https
-      .get("https://nodejs.org/dist/latest/SHASUMS256.txt", function (res) {
-        if (res.statusCode !== 200) {
-          reject(new Error("Received error code " + res.statusCode));
-          return;
-        }
+  if (res.status !== 200) {
+    throw new Error("Received error code " + res.status);
+  }
 
-        var body = "";
+  const body = await res.text();
+  const firstLine = body.split("\n")[0];
 
-        res.on("data", function (chunk) {
-          body += chunk;
-        });
-
-        res.on("end", function () {
-          var firstLine = body.split("\n")[0];
-          var result = /v(\d+\.\d+\.\d+)/.exec(firstLine)[1];
-
-          resolve(result);
-        });
-      })
-      .on("error", reject);
-  });
-}
-
-module.exports = getLatestNodeVersion;
+  return /v(\d+\.\d+\.\d+)/.exec(firstLine)[1];
+};
