@@ -3,7 +3,7 @@
   "author": "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
   "version": "0.1.0",
   "description": "get the latest version of Node",
-  "homepage": "https://github.com/EvanHahn/get-latest-node-version",
+  "homepage": "https://codeberg.org/EvanHahn/get-latest-node-version",
   "main": "get-latest-node-version.js",
   "engines": {
     "node": ">=21.0.0"
@@ -22,9 +22,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/EvanHahn/get-latest-node-version.git"
+    "url": "https://codeberg.org/EvanHahn/get-latest-node-version.git"
   },
-  "bugs": "https://github.com/EvanHahn/get-latest-node-version/issues",
+  "bugs": "https://codeberg.org/EvanHahn/get-latest-node-version/issues",
   "license": "Unlicense",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
