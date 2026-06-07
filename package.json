@@ -6,7 +6,10 @@
   "homepage": "https://github.com/EvanHahn/get-latest-node-version",
   "main": "get-latest-node-version.js",
   "scripts": {
-    "test": "node --test"
+    "format": "prettier --write .",
+    "test:prettier": "prettier --check .",
+    "test:node": "node --test",
+    "test": "run-p --aggregate-output test:*"
   },
   "keywords": [
     "node",
@@ -20,6 +23,8 @@
   "bugs": "https://github.com/EvanHahn/get-latest-node-version/issues",
   "license": "Unlicense",
   "devDependencies": {
+    "npm-run-all2": "^9.0.1",
+    "prettier": "^3.8.3",
     "semver": "^5.0.3"
   }
 }
