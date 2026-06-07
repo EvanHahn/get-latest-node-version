@@ -1,4 +1,4 @@
-# get the latest version of Node...from Node
+# Get the latest version of Node...from Node
 
 Usage:
 
